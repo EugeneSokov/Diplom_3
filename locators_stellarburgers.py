@@ -36,7 +36,7 @@ class OrderFeedLocators:
 
 class PersonalAreaLocators:
 
-    RESTORE_PASSW = (By.XPATH, "//a[contains(text(),'Восстановить пароль')]") # Текстровая ссылка на страницу "Восстановить пароль"
+    RESTORE_PASSW = (By.XPATH, "//a[contains(text(),'Восстановить пароль')]") # Текстовая ссылка на страницу "Восстановить пароль"
     EMAIL_AUTHOR = (By.XPATH, "//input[@type = 'text']")  # Поле ввода email на странице авторизации
     PASS_AUTHOR = (By.XPATH, "//input[@type = 'password']")  # Поле ввода пароля на странице авторизации
     LOGIN_BUTTON = (By.XPATH, "//button[contains(text(),'Войти')]") # Кнопка "Войти"
@@ -54,4 +54,11 @@ class ForgotPasswordLocators:
     EMAIL_FIELD = (By.XPATH, "//input[@class = 'text input__textfield text_type_main-default']") #  Поле ввода email
 
 
+class ResetPasswordLocators:
 
+    RESTORE_PASSW_FIELD = (By.XPATH, "//h2[contains(text(),'Восстановление пароля')]")  #  Заголовок страницы "Восстановление пароля"
+    PASSWORD_FIELD = (By.XPATH, "//label[contains(text(),'Пароль')]")  #  Метка поля для ввода пароля
+    ACTIVE_PASSW_INPUT = (By.XPATH, "//div[@class = 'input pr-6 pl-6 input_type_password input_size_default input_status_active']/input")  # Поле для ввода нового Пароля
+    VISIBILITY_ELEM = (By.XPATH, "//div[@class = 'input__icon input__icon-action']")  # Кнопка показать/скрыть пароль
+    CODE_FIELD = (By.XPATH, "//label[contains(text(),'Введите код из письма')]")  #  Метка поля "Введите код из письма"
+    ACTIVE_FIELD_PASSW = (By.XPATH, "//label[@class = 'input__placeholder text noselect text_type_main-default input__placeholder-focused input__placeholder-filled']")  # Активное(подсвеченное) поле для ввода пароля (метка)

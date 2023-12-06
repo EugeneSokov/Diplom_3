@@ -11,7 +11,7 @@ class BasePage:
         self.base_url = 'https://stellarburgers.nomoreparties.site/'
 
     @allure.step('Открываем страницу StellarBurgers')
-    def go_on_page_stellar_burger(self):
+    def go_on_page_stellar_burgers(self):
         return self.driver.get(self.base_url)
 
     @allure.step('Поиск элемента на странице с задержкой=14')
